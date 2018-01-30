@@ -32,7 +32,7 @@ img {
   margin-right: 0px; }
 
 .brief {
-  width: 40%;
+  width: calc(100% - 40px);
   padding: 20px;
   background: #fff178;
   float: left;
@@ -101,6 +101,3 @@ button {
   cursor: pointer; }
   button:hover {
     box-shadow: inset 10px 10px 5px 200px rgba(0, 0, 0, 0.75); }
-
-.brief {
-  width: calc(100% - 40px); }

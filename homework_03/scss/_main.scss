@@ -47,7 +47,7 @@ img {
 }
 
 .brief{
-	width: 40%;
+	width: $briefWidth;
 	padding: 20px;
 	background: $briefBackground;
 	float: left;
