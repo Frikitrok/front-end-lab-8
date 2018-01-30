@@ -1,0 +1,140 @@
+@mixin mainHeader {
+	color: $header1Color;
+	text-align: center;
+}
+
+@mixin tableText {
+	text-align: left;
+	padding: 7px 15px 7px 15px;
+}
+
+::placeholder { color: darken(#e0e0e0, 20%); }
+
+body {
+	background: $bodyBackground;
+	color: $textColor;
+}
+
+#content {
+  width: 960px;
+  margin: 0 auto;
+  padding:  10px 20px 20px 20px;
+  background: $contentBackground;
+}
+
+h1 {
+	@include mainHeader;
+}
+
+h2 {
+	color: $header2Color;
+}
+
+img {
+	margin: 0 20px 5px 0;
+	padding: 1px;
+	border: 3px solid $imageBorder;
+}
+
+.img-left {
+	float: left;
+}
+
+.img-right{
+	float: right;
+	margin-left: 15px;
+	margin-right: 0px;
+}
+
+.brief{
+	width: 40%;
+	padding: 20px;
+	background: $briefBackground;
+	float: left;
+	margin: 0 15px 15px 0;
+	color: black;
+}
+
+a {
+	color: $link;
+	&:hover {
+		color: $linkHover;
+	}
+}
+
+caption {
+	text-align: right;
+	@if variable-exists(caption) {
+		color: black;
+	}
+}
+
+th {
+	background: $tableColor;
+	font-size: 14pt;
+	font-weight: lighter;
+	text-transform: uppercase;
+	@include tableText;
+
+	@if variable-exists(caption) {
+		color: black;
+	}
+
+	&:not(:last-child) {
+		border-right: 2px solid darken(white, 20%);
+	}
+}
+
+td {
+	@include tableText;
+	background: $tableCels;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+tr {
+	&:first-child {
+		border-bottom: none;
+	}
+	border-bottom: 1px solid $tableColor;
+}
+
+form p {
+	float: left;
+	margin: 0 0 15px 0;
+	width: 100%;
+	text-transform: uppercase;
+	color: $formColor;
+	input {
+		padding: 3px;
+		width: calc(100% - 10px);
+		margin-top: 5px;
+	}
+
+	textarea {
+		@extend input;
+		width: calc(100% - 6px);
+		height: 200px;
+	}
+}
+
+.half-form{
+	width: calc(50% - 5px);
+	&:first-child { 
+		margin-right: 10px;
+	}
+}
+
+button {
+	border: 1px solid $link;
+	color: $link;
+	text-transform: uppercase;
+	padding: 10px 50px;
+	background: transparent;
+	cursor: pointer;
+	&:hover {
+		box-shadow: inset 10px 10px 5px 200px rgba(0,0,0,0.75);
+	}
+}
