@@ -90,6 +90,7 @@ form p {
     margin-right: 10px; }
 
 button {
+  float: left;
   border: 1px solid #3d70a1;
   color: #3d70a1;
   text-transform: uppercase;
