@@ -4,100 +4,84 @@
 body {
   background: rgba(198, 238, 252, 0.53);
   color: white; }
-
-#content {
-  width: 960px;
-  margin: 0 auto;
-  padding: 10px 20px 20px 20px;
-  background: #3b3b3b; }
-
-h1 {
-  color: #fccd10;
-  text-align: center; }
-
-h2 {
-  color: #fccd10; }
-
-img {
-  margin: 0 20px 5px 0;
-  padding: 1px;
-  border: 3px solid #d6ac03; }
-
-.img-left {
-  float: left; }
-
-.img-right {
-  float: right;
-  margin-left: 15px;
-  margin-right: 0px; }
-
-.brief {
-  width: calc(100% - 40px);
-  padding: 20px;
-  background: #fff178;
-  float: left;
-  margin: 0 15px 15px 0;
-  color: black; }
-
-a {
-  color: #c9a208; }
-  a:hover {
-    color: #987b06; }
-
-caption {
-  text-align: right;
-  color: black; }
-
-th {
-  background: #94a34e;
-  font-size: 14pt;
-  font-weight: lighter;
-  text-transform: uppercase;
-  text-align: left;
-  padding: 7px 15px 7px 15px;
-  color: black; }
-  th:not(:last-child) {
-    border-right: 2px solid #cccccc; }
-
-td {
-  text-align: left;
-  padding: 7px 15px 7px 15px;
-  background: #677d01; }
-
-table {
-  border-collapse: collapse; }
-
-tr {
-  border-bottom: 1px solid #94a34e; }
-  tr:first-child {
-    border-bottom: none; }
-
-form p {
-  float: left;
-  margin: 0 0 15px 0;
-  width: 100%;
-  text-transform: uppercase;
-  color: #c9a208; }
-  form p input, form p textarea {
-    padding: 3px;
-    width: calc(100% - 10px);
-    margin-top: 5px; }
-  form p textarea {
-    width: calc(100% - 6px);
-    height: 200px; }
-
-.half-form {
-  width: calc(50% - 5px); }
-  .half-form:first-child {
-    margin-right: 10px; }
-
-button {
-  float: left;
-  border: 1px solid #c9a208;
-  color: #c9a208;
-  text-transform: uppercase;
-  padding: 10px 50px;
-  background: transparent;
-  cursor: pointer; }
-  button:hover {
-    box-shadow: inset 10px 10px 5px 200px rgba(0, 0, 0, 0.75); }
+  body #content {
+    width: 960px;
+    margin: 0 auto;
+    padding: 10px 20px 20px 20px;
+    background: #3b3b3b; }
+    body #content h1 {
+      color: #fccd10;
+      text-align: center; }
+    body #content h2 {
+      color: #fccd10; }
+    body #content img {
+      margin: 0 20px 5px 0;
+      padding: 1px;
+      border: 3px solid #d6ac03; }
+    body #content .img-left {
+      float: left; }
+    body #content .img-right {
+      float: right;
+      margin-left: 15px;
+      margin-right: 0px; }
+    body #content .brief {
+      width: calc(100% - 40px);
+      padding: 20px;
+      background: #fff178;
+      float: left;
+      margin: 0 15px 15px 0;
+      color: black; }
+    body #content a {
+      color: #c9a208; }
+      body #content a:hover {
+        color: #987b06; }
+    body #content table {
+      border-collapse: collapse; }
+      body #content table caption {
+        text-align: right;
+        color: black; }
+      body #content table tr {
+        border-bottom: 1px solid #94a34e; }
+        body #content table tr:first-child {
+          border-bottom: none; }
+        body #content table tr th {
+          background: #94a34e;
+          font-size: 14pt;
+          font-weight: lighter;
+          text-transform: uppercase;
+          text-align: left;
+          padding: 7px 15px 7px 15px;
+          color: black; }
+          body #content table tr th:not(:last-child) {
+            border-right: 2px solid #cccccc; }
+        body #content table tr td {
+          text-align: left;
+          padding: 7px 15px 7px 15px;
+          background: #677d01; }
+    body #content form p {
+      float: left;
+      margin: 0 0 15px 0;
+      width: 100%;
+      text-transform: uppercase;
+      color: #c9a208; }
+      body #content form p input, body #content form p textarea {
+        padding: 3px;
+        width: calc(100% - 10px);
+        margin-top: 5px; }
+      body #content form p textarea {
+        width: calc(100% - 6px);
+        height: 200px; }
+    body #content .half-form {
+      width: calc(50% - 5px); }
+      body #content .half-form:first-child {
+        margin-right: 10px; }
+    body #content button {
+      float: left;
+      border: 1px solid #c9a208;
+      color: #c9a208;
+      text-transform: uppercase;
+      padding: 10px 50px;
+      background: transparent;
+      cursor: pointer; }
+      body #content button:hover {
+        box-shadow: inset 10px 10px 5px 200px rgba(0, 0, 0, 0.75); }

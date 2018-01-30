@@ -4,98 +4,82 @@
 body {
   background: #dcbb9a;
   color: black; }
-
-#content {
-  width: 960px;
-  margin: 0 auto;
-  padding: 10px 20px 20px 20px;
-  background: white; }
-
-h1 {
-  color: #893c00;
-  text-align: center; }
-
-h2 {
-  color: #bc5200; }
-
-img {
-  margin: 0 20px 5px 0;
-  padding: 1px;
-  border: 3px solid #ad4c00; }
-
-.img-left {
-  float: left; }
-
-.img-right {
-  float: right;
-  margin-left: 15px;
-  margin-right: 0px; }
-
-.brief {
-  width: 40%;
-  padding: 20px;
-  background: #fadcba;
-  float: left;
-  margin: 0 15px 15px 0;
-  color: black; }
-
-a {
-  color: #3d70a1; }
-  a:hover {
-    color: #213d57; }
-
-caption {
-  text-align: right; }
-
-th {
-  background: #e0e0e0;
-  font-size: 14pt;
-  font-weight: lighter;
-  text-transform: uppercase;
-  text-align: left;
-  padding: 7px 15px 7px 15px; }
-  th:not(:last-child) {
-    border-right: 2px solid #cccccc; }
-
-td {
-  text-align: left;
-  padding: 7px 15px 7px 15px;
-  background: transperent; }
-
-table {
-  border-collapse: collapse; }
-
-tr {
-  border-bottom: 1px solid #e0e0e0; }
-  tr:first-child {
-    border-bottom: none; }
-
-form p {
-  float: left;
-  margin: 0 0 15px 0;
-  width: 100%;
-  text-transform: uppercase;
-  color: #adadad; }
-  form p input, form p textarea {
-    padding: 3px;
-    width: calc(100% - 10px);
-    margin-top: 5px; }
-  form p textarea {
-    width: calc(100% - 6px);
-    height: 200px; }
-
-.half-form {
-  width: calc(50% - 5px); }
-  .half-form:first-child {
-    margin-right: 10px; }
-
-button {
-  float: left;
-  border: 1px solid #3d70a1;
-  color: #3d70a1;
-  text-transform: uppercase;
-  padding: 10px 50px;
-  background: transparent;
-  cursor: pointer; }
-  button:hover {
-    box-shadow: inset 10px 10px 5px 200px rgba(0, 0, 0, 0.75); }
+  body #content {
+    width: 960px;
+    margin: 0 auto;
+    padding: 10px 20px 20px 20px;
+    background: white; }
+    body #content h1 {
+      color: #893c00;
+      text-align: center; }
+    body #content h2 {
+      color: #bc5200; }
+    body #content img {
+      margin: 0 20px 5px 0;
+      padding: 1px;
+      border: 3px solid #ad4c00; }
+    body #content .img-left {
+      float: left; }
+    body #content .img-right {
+      float: right;
+      margin-left: 15px;
+      margin-right: 0px; }
+    body #content .brief {
+      width: 40%;
+      padding: 20px;
+      background: #fadcba;
+      float: left;
+      margin: 0 15px 15px 0;
+      color: black; }
+    body #content a {
+      color: #3d70a1; }
+      body #content a:hover {
+        color: #213d57; }
+    body #content table {
+      border-collapse: collapse; }
+      body #content table caption {
+        text-align: right; }
+      body #content table tr {
+        border-bottom: 1px solid #e0e0e0; }
+        body #content table tr:first-child {
+          border-bottom: none; }
+        body #content table tr th {
+          background: #e0e0e0;
+          font-size: 14pt;
+          font-weight: lighter;
+          text-transform: uppercase;
+          text-align: left;
+          padding: 7px 15px 7px 15px; }
+          body #content table tr th:not(:last-child) {
+            border-right: 2px solid #cccccc; }
+        body #content table tr td {
+          text-align: left;
+          padding: 7px 15px 7px 15px;
+          background: transperent; }
+    body #content form p {
+      float: left;
+      margin: 0 0 15px 0;
+      width: 100%;
+      text-transform: uppercase;
+      color: #adadad; }
+      body #content form p input, body #content form p textarea {
+        padding: 3px;
+        width: calc(100% - 10px);
+        margin-top: 5px; }
+      body #content form p textarea {
+        width: calc(100% - 6px);
+        height: 200px; }
+    body #content .half-form {
+      width: calc(50% - 5px); }
+      body #content .half-form:first-child {
+        margin-right: 10px; }
+    body #content button {
+      float: left;
+      border: 1px solid #3d70a1;
+      color: #3d70a1;
+      text-transform: uppercase;
+      padding: 10px 50px;
+      background: transparent;
+      cursor: pointer; }
+      body #content button:hover {
+        box-shadow: inset 10px 10px 5px 200px rgba(0, 0, 0, 0.75); }
