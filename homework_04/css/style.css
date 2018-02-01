@@ -1,0 +1,236 @@
+@import url(open-sans.css);
+* {
+  margin: 0px;
+  font-family: 'Open Sans'; }
+
+body header {
+  width: 100%;
+  color: white;
+  text-transform: capitalize;
+  text-align: center;
+  min-height: 350px;
+  background: url(../img/apples.jpg) center top fixed no-repeat;
+  padding-bottom: 100px;
+  padding-top: 20px; }
+  body header nav {
+    width: 70%;
+    margin-left: 15%;
+    height: 80px;
+    font-size: 1em; }
+    body header nav p, body header nav #under-footer > div .footer-cont span, body #under-footer > div .footer-cont header nav span {
+      float: left;
+      height: 80px;
+      line-height: 80px;
+      text-transform: uppercase; }
+    body header nav ul {
+      float: right;
+      height: 80px; }
+      body header nav ul li {
+        box-sizing: border-box;
+        list-style-type: none;
+        float: left;
+        margin-top: 18px;
+        padding: 10px;
+        margin-right: 40px; }
+        body header nav ul li:hover {
+          border-bottom: 2px solid white; }
+      body header nav ul a:visited {
+        color: white; }
+  body header h1 {
+    font-size: 3vw;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin-top: 12%; }
+    body header h1::after {
+      content: 'TM';
+      font-size: 0.3em;
+      letter-spacing: normal;
+      vertical-align: top;
+      position: absolute;
+      margin-top: 2.2vw; }
+    body header h1 span {
+      font-size: 5vw;
+      font-family: "times new roman"; }
+  body header p, body header #under-footer > div .footer-cont span, body #under-footer > div .footer-cont header span {
+    opacity: 0.7; }
+  body header button {
+    margin-top: 12%;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 70px;
+    border: 2px solid white;
+    transition: all 1s;
+    cursor: pointer; }
+    body header button:hover {
+      background: rgba(255, 255, 255, 0.7);
+      border: 2px solid black;
+      color: black; }
+body section {
+  padding: 130px 0; }
+  body section > div {
+    width: 70%;
+    margin-left: 15%; }
+    body section > div > p, body #under-footer > div .footer-cont section > div > span {
+      float: left;
+      width: calc(50% - 30px);
+      text-align: justify; }
+      body section > div > p:first-child, body #under-footer > div .footer-cont section > div > span:first-child {
+        margin-right: 60px;
+        font-size: 15pt; }
+body #featured {
+  background: #e5e5e5; }
+  body #featured div #featured-headaer {
+    text-align: center;
+    float: none;
+    width: 100%;
+    margin-bottom: 70px; }
+  body #featured div .flex-featured {
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px; }
+    body #featured div .flex-featured div {
+      height: 260px;
+      background: center center;
+      position: relative;
+      background-size: cover;
+      box-shadow: inset 0px 0px 0px 200px rgba(0, 0, 0, 0.3); }
+    body #featured div .flex-featured img {
+      width: 100%; }
+    body #featured div .flex-featured .wide-blc {
+      width: calc(67% - 15px); }
+    body #featured div .flex-featured .ner-blc {
+      width: calc(33% - 15px); }
+    body #featured div .flex-featured > div:first-child {
+      margin-right: 30px; }
+    body #featured div .flex-featured .like {
+      font-size: 0.8em;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      color: white;
+      padding: 7px 12px;
+      background-color: rgba(0, 0, 0, 0.7);
+      border: 2px solid white; }
+    body #featured div .flex-featured p, body #featured #under-footer > div .flex-featured .footer-cont span, body #featured #under-footer > div .footer-cont .flex-featured span {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      color: #cccccc; }
+      body #featured div .flex-featured p b, body #featured #under-footer > div .flex-featured .footer-cont span b, body #featured #under-footer > div .footer-cont .flex-featured span b {
+        color: white; }
+  body #featured div #subscribe {
+    width: 100%;
+    background-color: white;
+    padding: 50px 0;
+    font-size: 1.3em; }
+    body #featured div #subscribe p, body #featured #under-footer > div #subscribe .footer-cont span, body #featured #under-footer > div .footer-cont #subscribe span {
+      display: inline-block;
+      margin-left: 10%;
+      vertical-align: middle;
+      width: calc(35% - 30px); }
+    body #featured div #subscribe input {
+      border: 1px solid black;
+      background-color: #eaeaea;
+      padding: 15px 30px;
+      width: calc(30% - 38px); }
+      body #featured div #subscribe input::placeholder {
+        color: black; }
+    body #featured div #subscribe button {
+      color: white;
+      padding: 16px 0;
+      border: none;
+      margin-left: -6px;
+      background-color: #3d3d3d;
+      transition: 0.5s all;
+      cursor: pointer;
+      width: 15%;
+      margin-right: 10%; }
+      body #featured div #subscribe button:hover {
+        background-color: #434b70; }
+body #under-footer > div {
+  display: flex; }
+  body #under-footer > div .footer-cont {
+    width: 15.5%;
+    margin-right: 10%;
+    overflow: auto; }
+    body #under-footer > div .footer-cont:last-child {
+      margin-right: 0px;
+      width: 23.5%; }
+    body #under-footer > div .footer-cont b {
+      width: 100%; }
+    body #under-footer > div .footer-cont p, body #under-footer > div .footer-cont span {
+      text-align: justify;
+      font-size: 0.8em;
+      color: #8c8c8c;
+      margin-bottom: 10px; }
+    body #under-footer > div .footer-cont span {
+      color: #b7b7b7; }
+    body #under-footer > div .footer-cont input {
+      border: 1px solid black;
+      background-color: #eaeaea;
+      padding: 15px 30px;
+      width: calc(60% - 42px);
+      padding: 10px 20px;
+      margin-top: 20px; }
+      body #under-footer > div .footer-cont input::placeholder {
+        color: black; }
+      body #under-footer > div .footer-cont input::placeholder {
+        font-style: italic;
+        color: #898989; }
+    body #under-footer > div .footer-cont button {
+      color: white;
+      padding: 16px 0;
+      border: none;
+      margin-left: -6px;
+      background-color: #3d3d3d;
+      transition: 0.5s all;
+      cursor: pointer;
+      width: 40%;
+      padding: 11px 0; }
+      body #under-footer > div .footer-cont button:hover {
+        background-color: #434b70; }
+body footer {
+  width: 70%;
+  margin-left: 15%; }
+  body footer hr {
+    width: 100%;
+    border: 1px solid #ededed; }
+  body footer p, body footer #under-footer > div .footer-cont span, body #under-footer > div .footer-cont footer span {
+    float: left;
+    margin-top: 30px;
+    color: #afafaf;
+    font-size: 0.9em; }
+  body footer nav {
+    float: right;
+    color: black; }
+    body footer nav ul a li {
+      box-sizing: border-box;
+      list-style-type: none;
+      float: left;
+      padding: 20px 0px;
+      margin: 10px 0px 10px 40px;
+      font-weight: bold;
+      font-size: 0.9em; }
+    body footer nav ul a:visited {
+      color: black; }
+    body footer nav ul a:hover {
+      color: #aaaaaa; }
+
+@media screen and (max-width: 880px) {
+  body header nav {
+    width: 100%;
+    margin: 0px; }
+    body header nav p, body header nav #under-footer > div .footer-cont span, body #under-footer > div .footer-cont header nav span {
+      display: none; }
+    body header nav ul {
+      width: 100%; }
+      body header nav ul li {
+        width: 25%;
+        padding: 0px;
+        padding-bottom: 20px;
+        margin: 0px;
+        text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */
