@@ -10,6 +10,7 @@ body header {
   text-align: center;
   min-height: 350px;
   background: url(../img/apples.jpg) center top fixed no-repeat;
+  background-size: cover;
   padding-bottom: 100px;
   padding-top: 20px; }
   body header nav {
