@@ -18,6 +18,10 @@ body header {
     margin-left: 15%;
     height: 80px;
     font-size: 1em; }
+    @media (max-width: 1200px) {
+      body header nav {
+        width: 82%;
+        margin-left: 8%; } }
     body header nav p, body header nav #under-footer > div .footer-cont span, body #under-footer > div .footer-cont header nav span {
       float: left;
       height: 80px;
@@ -72,6 +76,10 @@ body section {
   body section > div {
     width: 70%;
     margin-left: 15%; }
+    @media (max-width: 1200px) {
+      body section > div {
+        width: 82%;
+        margin-left: 8%; } }
     body section > div > p, body #under-footer > div .footer-cont section > div > span {
       float: left;
       width: calc(50% - 30px);
@@ -95,7 +103,7 @@ body #featured {
       background: center center;
       position: relative;
       background-size: cover;
-      box-shadow: inset 0px 0px 0px 200px rgba(0, 0, 0, 0.3); }
+      box-shadow: inset 0px -131px 96px -59px rgba(0, 0, 0, 0.6); }
     body #featured div .flex-featured img {
       width: 100%; }
     body #featured div .flex-featured .wide-blc {
@@ -125,6 +133,7 @@ body #featured {
     width: 100%;
     background-color: white;
     padding: 50px 0;
+    margin-top: 80px;
     font-size: 1.3em; }
     body #featured div #subscribe p, body #featured #under-footer > div #subscribe .footer-cont span, body #featured #under-footer > div .footer-cont #subscribe span {
       display: inline-block;
@@ -155,7 +164,7 @@ body #under-footer > div {
   body #under-footer > div .footer-cont {
     width: 15.5%;
     margin-right: 10%;
-    overflow: auto; }
+    overflow: none; }
     body #under-footer > div .footer-cont:last-child {
       margin-right: 0px;
       width: 23.5%; }
@@ -195,6 +204,10 @@ body #under-footer > div {
 body footer {
   width: 70%;
   margin-left: 15%; }
+  @media (max-width: 1200px) {
+    body footer {
+      width: 82%;
+      margin-left: 8%; } }
   body footer hr {
     width: 100%;
     border: 1px solid #ededed; }

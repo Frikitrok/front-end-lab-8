@@ -4,6 +4,10 @@
 @mixin midContent {
 	width: 70%;
 	margin-left: 15%;
+	@media (max-width: 1200px) {
+	    width: 82%;
+		margin-left: 8%;
+  	}
 }
 
 @mixin li-elem {
@@ -156,7 +160,7 @@ body {
 					background: center center;
 					position: relative;
 					background-size: cover;
-					box-shadow: inset 0px 0px 0px 200px rgba(0,0,0,0.3);
+					box-shadow: inset 0px -131px 96px -59px rgba(0,0,0,0.6);
 				}
 				img {
 					width: 100%;
@@ -196,6 +200,7 @@ body {
 				width: 100%;
 				background-color: white;
 				padding: 50px 0;
+				margin-top: 80px;
 				font-size: 1.3em;
 				p {
 					display: inline-block;
@@ -222,7 +227,7 @@ body {
 			.footer-cont {
 				width: 15.5%;
 				margin-right: 10%;
-				overflow: auto;
+				overflow: none;
 				&:last-child {
 					margin-right: 0px;
 					width: 23.5%;
@@ -295,6 +300,10 @@ body {
 
 		 }
 	}
+}
+
+@media screen and (max-width: 1200px) {
+	
 }
 
 
