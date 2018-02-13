@@ -7,18 +7,19 @@ var num1 = parseFloat(prompt('Rows number 0-20'));
   } else {
     var itemAmount = 1;
     var spacing = num1 - 1;
+    var row = ""
     for (var i = num1; i > 0; i--) {
-      var row = ""
       for (var k = 0; k < spacing; k++) {
         row += "   ";
       }
       for (var k = 0; k < itemAmount; k++) {
         row += "[~]";
       }
-      console.log(row);
+      row += "\n";
       spacing -= 1;
       itemAmount += 2;
     }
+    console.log(row);
   }
 
 
