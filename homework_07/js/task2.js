@@ -15,7 +15,7 @@ while(true) {
       var answer = prompt("Enter a number from 0 to " + max + "\n"
                           + "Attempsts left: " + attempts + "\n"
                           + "Total prize: " + win + "$" + "\n"
-                          + "Possible prize on current attempt: " + maxPrize + "$");
+                          + "Possible prize on current attempt: " + currentPrize + "$");
       if(num == answer) {
         win += currentPrize;
         console.log("You win " + currentPrize + "$");
