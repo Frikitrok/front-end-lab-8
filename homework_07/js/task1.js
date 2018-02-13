@@ -7,7 +7,7 @@ var num1 = parseFloat(prompt('Rows number 0-20'));
   } else {
     var itemAmount = 1;
     var spacing = num1 - 1;
-    var row = ""
+    var row = "";
     for (var i = num1; i > 0; i--) {
       for (var k = 0; k < spacing; k++) {
         row += "   ";
