@@ -11,14 +11,13 @@ while(true) {
   if(play) {
     var num = Math.floor(Math.random() * Math.floor(max));
     for (var i = 0; i < 3; i++) {
-      console.log(attempts);
       var answer = prompt("Enter a number from 0 to " + max + "\n"
                           + "Attempsts left: " + attempts + "\n"
-                          + "Total prize: " + win + "\n"
-                          + "Possible prize on current attempt: " + prize[2]);
+                          + "Total prize: " + win + "$" + "\n"
+                          + "Possible prize on current attempt: " + prize[2] + "$");
       if(num == answer) {
         win += prize[attempts - 1];
-        console.log("You win " + prize[attempts - 1]);
+        console.log("You win " + prize[attempts - 1] + "$");
         attempts = 3;
         max *= 2;
         prize.forEach(function(item, index) {
@@ -28,7 +27,7 @@ while(true) {
       }else {
         attempts--;
         if(attempts==0) {
-          console.log('Thank you for a game. Your prize is: ' + win);
+          console.log('Thank you for a game. Your prize is: ' + win + "$");
           max = 5;
           attempts = 3;
           prize = [2, 5, 10];
@@ -39,7 +38,7 @@ while(true) {
     }
   } else {
     if(win > 0) {
-      console.log('Thank you for a game. Your prize is: ' + win);
+      console.log('Thank you for a game. Your prize is: ' + win + "$");
     } else {
       console.log("You did not become a millionaire");
     }
