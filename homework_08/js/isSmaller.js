@@ -1,6 +1,12 @@
-function isSmaller(a, b) {
-	return a < b;
-}
-console.log(isSmaller(2, 3));
-
-
+function isSmaller(a,b){
+	if(isBigger(a,b)) {
+	  return false;
+	}
+	else {
+	  return true;
+	}
+  }
+  
+  function isBigger(a,b){
+	return a > b;
+  }
