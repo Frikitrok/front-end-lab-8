@@ -10,13 +10,6 @@ function getFilteredArray(arr, func) {
    return temp;
 }
 
-
-function forEach(arr, func) {
-    for(var i = 0; i<arr.length; i++) {
-        func(arr[i]);
-    }
-}
-
 function predicateFunction(num) { 
     return num > 3;
 } // returns boolean value

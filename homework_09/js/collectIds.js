@@ -40,32 +40,5 @@ function collectIds(arr) {
     return getTransformedArray(filteredArray, transform);
 }
 
-
-function forEach(arr, func) {
-    for(var i = 0; i<arr.length; i++) {
-        func(arr[i]);
-    }
-}
-
-function getFilteredArray(arr, func) {
-    var temp = [];
-    forEach(arr, push);
-    function push(num) {
-        if(func(num)) {
-            temp.push(num);
-        }
-    }
-   return temp;
-}
-
-function getTransformedArray(arr, func) {
-    var temp = [];
-    forEach(arr, push);
-    function push(num) {
-        temp.push(func(num));
-    }
-   return temp;
-}
-
 console.log(collectIds(movies)); 
     

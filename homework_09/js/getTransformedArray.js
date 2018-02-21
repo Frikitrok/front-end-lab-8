@@ -7,14 +7,6 @@ function getTransformedArray(arr, func) {
     }
    return temp;
 }
-
-
-function forEach(arr, func) {
-    for(var i = 0; i<arr.length; i++) {
-        func(arr[i]);
-    }
-}
-
   
 function increment(num) { 
     return num + 1;
