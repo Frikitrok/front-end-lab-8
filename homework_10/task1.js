@@ -1,5 +1,5 @@
-var iterator = 0;
-var timeoutId;
+let iterator = 0;
+let timeoutId;
 
 function increaseIteratorBy1() {
  iterator++;
