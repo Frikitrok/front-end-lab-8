@@ -39,7 +39,6 @@ function changeShow(event, el) {
     let childs = el.childNodes;
     childs.forEach(element => {
         if(element.tagName == 'I') {   
-            console.log(element.className);
             if(element.innerHTML != 'local_movies') {
                 if(element.innerHTML == 'folder') {
                     element.innerHTML = 'folder_open';
