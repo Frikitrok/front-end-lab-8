@@ -19,3 +19,14 @@ span {
     line-height: 30px;
     display: block;
 }
+
+.folder > span:hover, .movie:hover, .empty-folder:hover {
+    background-color: antiquewhite;
+}
+
+.empty-folder {
+    display: none;
+    height: 30px;
+    line-height: 30px;
+    
+}

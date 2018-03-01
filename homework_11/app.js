@@ -3,13 +3,14 @@ var treeView;
 
 function createTree(arr, parrent, display) {
     arr.forEach((el, ind, arr) => {
+        let icon;
         let div = fastCreateElement('div', '', '');
         div.style.display = display;     
-        div.setAttribute("onClick", 'changeShow(event, this)');     
+        div.setAttribute("onClick", 'changeShow(event, this)');   
         if(el.folder == true) {
-            var icon = fastCreateElement('i', 'material-icons', 'folder');
+            icon = fastCreateElement('i', 'material-icons', 'folder');
         } else {
-            var icon = fastCreateElement('i', 'material-icons', 'local_movies');
+            icon = fastCreateElement('i', 'material-icons', 'local_movies');
         }
         div.appendChild(icon);
         let title = fastCreateElement('span', 'folder-text', el.title);
@@ -18,6 +19,9 @@ function createTree(arr, parrent, display) {
             div.className = "folder";
             if(el.children) {
                 createTree(el.children, div, 'none');
+            } else {
+                empty = fastCreateElement('div', 'empty-folder', 'Empty folder');
+                div.appendChild(empty);
             }
         } else {
             div.className = "movie";
