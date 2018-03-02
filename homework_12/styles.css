@@ -1,0 +1,103 @@
+/* Your styles goes here */
+* {
+    font-family: serif;
+}
+
+body {
+    background-color: #3d3d3d;
+}
+
+body h1, body h2 {
+    color: #969679;
+}
+
+.tank {
+    float: left;
+    width: 350px;
+    height: 280px;
+    font-size: 16pt;
+}
+
+.tank:hover {
+    background-color: #494949;
+}
+
+.tank span {
+    line-height: 40px;
+    margin-left: 10px;
+    color: #a5a584;
+    text-transform: uppercase;
+}
+
+.tank .tank-lvl {
+    color: #84846e;
+}
+
+.tank-img {
+    height: 240px;
+    display: block;
+    margin: 0 auto;
+} 
+
+.tank-national {
+    height: 20px;
+    margin-top: 10px;
+    float: left;
+    margin-left: 10px;
+}
+
+.tank-detail {
+    margin-top: 30px;
+}
+
+.tank-detail .tank-detail-country {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.tank-detail h1 {
+    text-transform: uppercase;
+    margin: 0 50px;
+
+}
+
+.tank-detail-preview {
+    min-width: 700px;
+    width: 45%;
+    float: left;
+}
+
+.tank-detail-characteristic {
+    float: left;
+    width: 50%;
+}
+
+.tank-detail-characteristic table {
+    width: 100%;
+    color: #969679;
+    border-collapse: collapse;
+        
+    
+}
+
+table td {
+    border: 1px solid #969679;
+    padding: 5px;
+}
+
+.clear {
+    clear: both;
+}
+
+.tank-detail a {
+    color: #969679;
+    text-decoration: none;
+    float: left;
+    margin-top: 10px;
+}
+
+
+.tank-detail a:hover {
+    color: #7c7c68;
+}
